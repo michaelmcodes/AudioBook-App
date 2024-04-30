@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SoundSaga" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#000</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+    </style>
+
+    <style name="Theme.SoundSaga" parent="Base.Theme.SoundSaga" />
+
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/splash_bg_color</item>
+        <item name="fontFamily">@font/rubik_regular</item>
+    </style>
+
+    <style name="itemTextStyle.AppTheme" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.App.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+        <item name="windowSplashScreenBackground">@color/splash_bg_color</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/splash_bg_color</item>
+        <item name="postSplashScreenTheme">@style/Theme.SoundSaga</item>
+    </style>
+</resources>

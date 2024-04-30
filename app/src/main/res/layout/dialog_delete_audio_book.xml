@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="20sp">
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivAudioBookImage"
+            android:layout_width="0sp"
+            android:layout_height="80sp"
+            android:layout_weight="1"
+            android:src="@drawable/background" />
+
+        <TextView
+            android:id="@+id/tvDialogMessage"
+            android:layout_width="0sp"
+            android:fontFamily="@font/rubik_regular"
+            android:layout_marginHorizontal="10sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llTop">
+
+        <TextView
+            android:id="@+id/tvOkButton"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/rubik_regular"
+            android:text="@string/ok"
+            android:textStyle="bold"
+            android:layout_marginEnd="20sp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCancelButton"
+            android:layout_width="0sp"
+            android:layout_marginEnd="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:fontFamily="@font/rubik_regular"
+            android:textStyle="bold"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tvOkButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/speed0.75x"
+        android:title="@string/playback_speed_0.75x" />
+    <item
+        android:id="@+id/speed1.0x"
+        android:title="@string/playback_speed_default" />
+    <item
+        android:id="@+id/speed1.1x"
+        android:title="@string/playback_speed_1.1x" />
+    <item
+        android:id="@+id/speed1.25x"
+        android:title="@string/playback_speed_1.25x" />
+    <item
+        android:id="@+id/speed1.5x"
+        android:title="@string/playback_speed_1.5x" />
+    <item
+        android:id="@+id/speed1.75x"
+        android:title="@string/playback_speed_1.75x" />
+    <item
+        android:id="@+id/speed2.0x"
+        android:title="@string/playback_speed_2.0x" />
+</menu>

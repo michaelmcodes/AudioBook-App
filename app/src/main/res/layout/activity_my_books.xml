@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10sp"
+    tools:context=".feature.mybooks.MyBooksActivity">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik_black"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMyBooksWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="14sp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:fontFamily="@font/rubik_regular"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/my_books"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyAudioBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginVertical="10sp"
+        android:background="@color/recycler_view_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMyBooksWord" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

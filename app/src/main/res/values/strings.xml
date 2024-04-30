@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SoundSaga</string>
+
+    <string name="audio_books">Audio Books</string>
+    <string name="my_books">My Books</string>
+    <string name="fifteen">15</string>
+    <string name="zero_duration_at">00:00:00</string>
+    <string name="playback_speed_default">1.0x</string>
+    <string name="playback_speed_0.75x">0.75x</string>
+    <string name="playback_speed_1.1x">1.1x</string>
+    <string name="playback_speed_1.25x">1.25x</string>
+    <string name="playback_speed_1.5x">1.5x</string>
+    <string name="playback_speed_1.75x">1.75x</string>
+    <string name="playback_speed_2.0x">2.0x</string>
+
+    <string name="no_internet">No Internet</string>
+    <string name="please_check_your_internet_connection">Please check your internet connection!</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove_the_book_history">Remove the book history for</string>
+    
+    <string name="my_books_shelf_empty">My books shelf is empty</string>
+    <string name="you_have_no_audio_books">You currently have no audiobooks in progress</string>
+
+    <string name="chapters">Chapters</string>
+    <string name="language">Language:</string>
+    <string name="duration">Duration:</string>
+
+
+    <string name="default_author">No author</string>
+    <string name="default_title">Nothing is being played</string>
+</resources>

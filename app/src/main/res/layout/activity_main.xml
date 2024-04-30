@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10sp"
+    tools:context=".feature.main.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_black"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/ivBooksMenu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivBooksMenu"
+            android:layout_width="44sp"
+            android:layout_height="44sp"
+            android:padding="4sp"
+            android:src="@drawable/my_books_menu"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvAudioBooksWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10sp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/audio_books"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clTopBar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAudioBooks"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginVertical="10sp"
+        android:background="@color/recycler_view_bg_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAudioBooksWord" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64sp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAudioBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/default_title"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tvAudioBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:focusable="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/default_author"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivRewindButton"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginHorizontal="2sp"
+                android:src="@drawable/baseline_replay_30_24" />
+
+            <ImageView
+                android:id="@+id/ivPlayPause"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginHorizontal="2sp"
+                android:src="@drawable/baseline_play_circle_24" />
+
+            <ImageView
+                android:id="@+id/ivForwardButton"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginHorizontal="2sp"
+                android:src="@drawable/baseline_forward_30_24" />
+
+            <ImageView
+                android:id="@+id/ivCloseButton"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginHorizontal="2sp"
+                android:src="@drawable/baseline_close_24" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
